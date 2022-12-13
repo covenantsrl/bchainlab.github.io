@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
+    <loc>https://www.bchainlab.it/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>https://www.bchainlab.it/categories/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>https://www.bchainlab.it/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://www.bchainlab.it/tags/</loc>
   </url>
 </urlset>

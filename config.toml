@@ -1,8 +1,8 @@
 #baseURL = 'https://www.bchainlab.it/'
-baseURL = '/'
+baseURL = 'https://www.bchainlab.it'
 
 languageCode = 'en-us'
-title = 'Covenant Srls'
+title = 'BChain Lab'
 
 theme = "covenant-theme"
 publishDir = "docs"
