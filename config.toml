@@ -8,6 +8,9 @@ theme = "covenant-theme"
 publishDir = "docs"
 staticDir = ['assets']
 
+layout = 'home/home1'
+
+
 defaultContentLang = 'it'
 
 [params]
