@@ -7,7 +7,6 @@ title = 'BChain Lab'
 theme = "covenant-theme"
 publishDir = "docs"
 staticDir = ['assets']
-layout = 'home'
 
 defaultContentLang = 'it'
 
