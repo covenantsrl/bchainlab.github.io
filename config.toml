@@ -2,12 +2,11 @@
 baseURL = 'https://www.bchainlab.it'
 
 languageCode = 'en-us'
-title = 'BChain Lab'
+title = 'BChainLab'
 
 theme = "covenant-theme"
 publishDir = "docs"
 staticDir = ['assets']
-
 
 defaultContentLang = 'it'
 

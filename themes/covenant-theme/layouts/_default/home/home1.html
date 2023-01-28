@@ -1,5 +1,8 @@
 {{ partial "head.html" . }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style-dark.css?ver=200">
+<style>
+    .header-navbar-s1 .menu > .menu-item > a {font-size: 18px;}
+</style>
 </head>
 
 <body class="nk-body body-wider theme-dark mode-onepage">
@@ -28,11 +31,11 @@
                         <div class="header-navbar header-navbar-s1">
                             <nav class="header-menu" id="example-menu-04">
                                 <ul class="menu menu-s2 animated" data-animate="fadeInDown" data-delay=".75">
-                                    <li class="menu-item"><a class="menu-link nav-link" href="#ico">CHI SIAMO</a></li>
+                                    <li class="menu-item"><a class="menu-link nav-link" href="#bio">CHI SIAMO</a></li>
                                     
-                                    <li class="menu-item has-sub">
-                                        <a class="menu-link nav-link menu-toggle" href="#">SERVIZI</a>
-                                        <div class="menu-sub menu-drop menu-mega menu-mega-3clmn">
+                                    <li class="menu-item">
+                                        <a class="menu-link nav-link" href="#services">SERVIZI</a>
+                                        <!-- <div class="menu-sub menu-drop menu-mega menu-mega-3clmn">
                                             <div class="menu-mega-innr">
                                                 <ul class="menu-mega-list">
                                                     <li class="menu-item"><a href="#"><strong>WEB 3 DEVELOPMENT</strong></a></li>
@@ -52,9 +55,9 @@
                                                     <li class="menu-item"><a href="#">Trading</a></li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </li>                                   
-                                    <li class="menu-item"><a class="menu-link nav-link" href="#roadmap">PORTFOLIO</a></li>
+                                    <!--<li class="menu-item"><a class="menu-link nav-link" href="#roadmap">PORTFOLIO</a></li>-->
                                     <li class="menu-item"><a class="menu-link nav-link" href="#team">SETTORI</a></li>
                                     <li class="menu-item"><a class="menu-link nav-link" href="#partners">TECNOLOGIA</a></li>
                                    
@@ -93,10 +96,12 @@
                                     <div class="col-lg-6">
                                         <div class="banner-caption wide-auto text-center text-lg-start">
                                             <div class="cpn-head mt-0">
-                                                <h1 class="title title-xl-2 title-semibold animated" data-animate="fadeInUp" data-delay="1.35">Powering Data for the new equity blockchain</h1>
+                                                <h1 class="title title-xl-2 title-semibold animated" data-animate="fadeInUp" data-delay="1.35">Soluzioni per un futuro decentralizzato, trasparente e non censurabile. </h1>
                                             </div>
                                             <div class="cpn-text cpn-text-s1">
-                                                <p class="lead animated" data-animate="fadeInUp" data-delay="1.45">Global decentralize network to buy &amp; sell shares</p>
+
+                                                <p class="lead animated" data-animate="fadeInUp" data-delay="1.45">
+                                                     Esploriamo e lavoriamo su progetti e tecnologie in ambito blockchain &amp; NFT orientate alla proprietà digitale e alla privacy. </p>
                                             </div>
                                             <div class="cpn-btns">
                                                 <ul class="btn-grp animated" data-animate="fadeInUp" data-delay="1.55">
@@ -119,7 +124,7 @@
             <!-- .header-banner @e -->
         </header>
         <main class="nk-pages">
-            <section class="section mask-c-blend-dark bg-theme-dark-alt tc-light ov-h" id="ico">
+            <section class="section mask-c-blend-dark bg-theme-dark-alt tc-light ov-h" id="bio">
                 <div class="container">
                     <!-- Block @s -->
                     <div class="nk-block nk-block-text-wrap">
@@ -149,7 +154,7 @@
                 </div>
             </section>
             <!-- // -->
-            <section class="section bg-theme-dark-alt tc-light py-0 ov-h">
+            <section class="section bg-theme-dark-alt tc-light py-0 ov-h" id="services">
                 <div class="container">
                     <!-- Block @s -->
                     <div class="nk-block nk-block-features-2">
@@ -285,110 +290,10 @@
                             </div>
                         </div>
                     </div><!-- .block @e -->
-                    <div class="nk-block">
-                        <div class="row justify-content-center gutter-vr-40px">
-                            <div class="col-md-6 col-mb-8">
-                                <div class="single-chart">
-                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".1">Distribution <br>of tokens</h3>
-                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".2">
-                                        <img src="{{ .Site.BaseURL }}images/dark/e-dark.png" alt="chart">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-mb-8">
-                                <div class="single-chart">
-                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".3">Use <br>of proceeds</h3>
-                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".4">
-                                        <img src="{{ .Site.BaseURL }}images/dark/f-dark.png" alt="chart">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- .block @e -->
+                    
                 </div>
             </section>
-            <!-- // -->
-            <section class="section bg-theme tc-light section-connect" id="roadmap">
-                <div class="container ov-h">
-                    <div class="section-head text-center wide-auto-sm">
-                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="Roadmap">Our Roadmap</h2>
-                    </div><!-- .section-head @e -->
-                </div>
-                <!-- Block @s -->
-                <div class="nk-block ov-h">
-                    <div class="container">
-                        <div class="roadmap-list animated" data-animate="fadeInUp" data-delay=".2">
-                            <div class="roadmap-item roadmap-item-sm roadmap-done">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">March 2022</h6>
-                                    <p>Start of the ICO Crypto Platform Development.</p>
-                                </div>
-                            </div><!-- .roadmap-item -->
-                            <div class="roadmap-item roadmap-done">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">June 2022</h6>
-                                    <p>Over 100 merchants on site</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item roadmap-item-lg">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">June 2022</h6>
-                                    <p>Launched of mobile Apps</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">August 2022</h6>
-                                    <p>ICO preparation &amp; Press Tour</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item roadmap-item-sm">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">October 2022</h6>
-                                    <p>Start Token Sale Round (1)</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">December 2022</h6>
-                                    <p>Partnership for the future EcoSystem</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item roadmap-item-lg">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">January 2022</h6>
-                                    <p>Our team set-up and commercial preparation</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">May 2022</h6>
-                                    <p>Priority opening for Token holder</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item roadmap-item-sm">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">June 2022</h6>
-                                    <p>Start Token Sale Round (2)</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">Octorber 2022</h6>
-                                    <p>Blockchain usage announcement for global Network</p>
-                                </div>
-                            </div>
-                            <div class="roadmap-item roadmap-item-lg">
-                                <div class="roadmap-innr">
-                                    <h6 class="roadmap-title roadmap-title-s2">December 2022</h6>
-                                    <p>Operational Launch United States to general</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .block @e -->
-            </section>
-            <!-- // -->
+            
             <section class="section bg-theme-dark tc-light ov-h pdb-0" id="team">
                 <div class="container">
                     <div class="section-head text-center wide-auto-sm tc-light">
@@ -429,7 +334,11 @@
                                                     <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                                                     <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                                 </ul>
-                                                <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+                                                <p>La proprietà digitale si riferisce alla proprietà intellettuale e ai diritti legali associati ai contenuti digitali, come musica, video, immagini, e-book, software e altri tipi di contenuti creati o acquisiti digitalmente. La proprietà digitale include anche la proprietà di beni virtuali in mondi virtuali e giochi online, nonché la proprietà di token e beni digitali sulla blockchain. In generale, la proprietà digitale si riferisce a qualsiasi cosa che può essere creata, acquisita o posseduta in forma digitale e protetta da diritti legali.
+
+
+
+                                                </p>
                                                 <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
                                                 <div class="progress-list">
                                                     <div class="progress-wrap">
@@ -708,7 +617,7 @@
                 <div class="container">
                     <!-- Section Head @s -->
                     <div class="section-head text-center wide-auto-sm tc-light">
-                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="Partners">ICO Crypto Partners</h2>
+                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="Partners">TECNOLOGIA</h2>
                     </div><!-- .section-head @e -->
                     <!-- Block @s -->
                     <div class="nk-block block-partners">
@@ -750,66 +659,7 @@
                 </div>
             </section>
             <!-- // -->
-            <section class="section section-contact bg-theme-dark tc-light" id="blog">
-                <div class="container">
-                    <div class="section-head text-center wide-auto-sm">
-                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="news">ICO Crypto News</h2>
-                    </div><!-- .section-head @e -->
-                    <!-- Block @s -->
-                    <div class="nk-block nk-block-blog">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-sm-9">
-                                <div class="blog blog-s2 animated" data-animate="fadeInUp" data-delay=".2">
-                                    <div class="blog-photo">
-                                        <img src="{{ .Site.BaseURL }}images/blog/a.jpg" alt="blog-thumb">
-                                    </div>
-                                    <div class="blog-text">
-                                        <ul class="blog-meta">
-                                            <li><a href="#">12 Mar, 2022</a></li>
-                                            <li><a href="#">Blockchain</a></li>
-                                        </ul>
-                                        <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                                        <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                                    </div>
-                                </div><!-- .blog -->
-                            </div><!-- .col -->
-                            <div class="col-lg-4 col-sm-9">
-                                <div class="blog blog-s2 animated" data-animate="fadeInUp" data-delay=".3">
-                                    <div class="blog-photo">
-                                        <img src="{{ .Site.BaseURL }}images/blog/b.jpg" alt="blog-thumb">
-                                    </div>
-                                    <div class="blog-text">
-                                        <ul class="blog-meta">
-                                            <li><a href="#">12 Mar, 2022</a></li>
-                                            <li><a href="#">Blockchain</a></li>
-                                        </ul>
-                                        <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                                        <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                                    </div>
-                                </div><!-- .blog -->
-                            </div><!-- .col -->
-                            <div class="col-lg-4 col-sm-9">
-                                <div class="blog blog-s2 animated" data-animate="fadeInUp" data-delay=".4">
-                                    <div class="blog-photo">
-                                        <img src="{{ .Site.BaseURL }}images/blog/c.jpg" alt="blog-thumb">
-                                    </div>
-                                    <div class="blog-text">
-                                        <ul class="blog-meta">
-                                            <li><a href="#">12 Mar, 2022</a></li>
-                                            <li><a href="#">Blockchain</a></li>
-                                        </ul>
-                                        <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                                        <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                                    </div>
-                                </div><!-- .blog -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .block @e -->
-                    <div class="text-center pdt-r animated" data-animate="fadeInUp" data-delay=".5">
-                        <a href="#" class="link link-primary link-uc link-animate"><span>Read all News</span> <em class="link-icon ti ti-angle-right"></em></a>
-                    </div>
-                </div>
-            </section>
+            
             <!-- // -->
             <section class="section bg-theme tc-light pb-0" id="faqs">
                 <div class="container">
@@ -1039,7 +889,7 @@
             <section class="section section-contact bg-theme tc-light" id="contact">
                 <div class="container">
                     <div class="section-head text-center wide-auto-sm">
-                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="Contact">Contact ICO Crypto</h2>
+                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="Contact">CONTATTI</h2>
                         <p class="animated" data-animate="fadeInUp" data-delay=".2">Any question? Reach out to us and we’ll get back to you shortly.</p>
                     </div><!-- .section-head @e -->
                     <!-- Block @s -->
@@ -1047,29 +897,29 @@
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-8 col-lg-10">
                                 <ul class="contact-list contact-list-s1 flex-wrap flex-md-nowrap pdb-l">
-                                    <li class="animated" data-animate="fadeInUp" data-delay=".3">
+                                    <!-- <li class="animated" data-animate="fadeInUp" data-delay=".3">
                                         <em class="contact-icon fas fa-phone"></em>
                                         <div class="contact-text">
                                             <span>+44 0123 4567</span>
                                         </div>
-                                    </li>
+                                    </li> -->
                                     <li class="animated" data-animate="fadeInUp" data-delay=".4">
                                         <em class="contact-icon fas fa-envelope"></em>
                                         <div class="contact-text">
-                                            <span>info@company.com</span>
+                                            <span>hello@bchainlab.it</span>
                                         </div>
                                     </li>
-                                    <li class="animated" data-animate="fadeInUp" data-delay=".5">
+                                    <!-- <li class="animated" data-animate="fadeInUp" data-delay=".5">
                                         <em class="contact-icon fas fa-paper-plane"></em>
                                         <div class="contact-text">
                                             <span>Join us on Telegram</span>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div><!-- .col -->
                             <div class="col-xl-8 col-lg-10">
                                 <div class="contact-wrap p-0">
-                                    <form id="contact-form-01" class="contact-form nk-form-submit" action="form/contact.php" method="post">
+                                    <!-- <form id="contact-form-01" class="contact-form nk-form-submit" action="form/contact.php" method="post">
                                         <div class="field-item field-item-center animated" data-animate="fadeInUp" data-delay=".6">
                                             <input name="contact-name" type="text" class="input-line required">
                                             <label class="field-label field-label-line">Your Name</label>
@@ -1087,7 +937,7 @@
                                             <button type="submit" class="btn btn-round btn-lg btn-grad">Submit</button>
                                             <div class="form-results"></div>
                                         </div>
-                                    </form>
+                                    </form> -->
                                 </div>
                             </div><!-- .col -->
                         </div><!-- .row -->
