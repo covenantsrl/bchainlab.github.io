@@ -2,15 +2,15 @@
 baseURL = 'https://www.bchainlab.it'
 
 languageCode = 'en-us'
-title = 'BChain Lab'
+title = 'BChainLab'
 
 theme = "covenant-theme"
 publishDir = "docs"
 staticDir = ['assets']
-
 
 defaultContentLang = 'it'
 
 [params]
   copyright = "Copyright © 2023 Covenant Srls. P.IVA 14635081004. Via Flavia, 47 - 00187 Roma. Tutti i diritti riservati."
   description = "The New Web3 Software and Privacy Company"
+

@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BChain Lab</title>
-    <link>https://www.bchainlab.it/</link>
-    <description>Recent content on BChain Lab</description>
+    <title>BChainLab</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on BChainLab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.bchainlab.it/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ComingSoon</title>
-      <link>https://www.bchainlab.it/</link>
+      <link>http://localhost:1313/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bchainlab.it/</guid>
+      <guid>http://localhost:1313/</guid>
       <description> A new web3 company focused on blockchain technologies, NFT and privacy.
 We are launching soon. </description>
+    </item>
+    
+    <item>
+      <title>Home1</title>
+      <link>http://localhost:1313/home/home1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/home/home1/</guid>
+      <description>{{ partial &#34;head.html&#34; . }} CHI SIAMO SERVIZI SETTORI TECNOLOGIA CONTATTI English Italiano English Soluzioni per un futuro decentralizzato, trasparente e non censurabile. Esploriamo e lavoriamo su progetti e tecnologie in ambito blockchain &amp;amp; NFT orientate alla proprietà digitale e alla privacy. Chi siamo Servizi We’ve built a platform to buy and sell shares. We’re reinventing the global equity blockchian – that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital and the way investors buy and sell shares.</description>
     </item>
     
   </channel>
