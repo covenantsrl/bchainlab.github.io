@@ -1,45 +1,19 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-  <head>
-	<meta name="generator" content="Hugo 0.102.3" /><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="author" content="Covenant">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A new web3 company focused on blockchain technologies, NFT and privacy.">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  
-<title>BChainLab</title>
-
-
-<link rel="shortcut icon" href="/images/favicon.png">
-
-
-
-<link rel="stylesheet" href="/css/vendor.bundle.css?ver=200">
-<link rel="stylesheet" href="/css/style.css?ver=200">
-
-<link rel="stylesheet" href="/css/theme.css?ver=200"><link rel="stylesheet" href="/css/style-dark.css?ver=200">
-<style>
-  .header-navbar-s1 .menu > .menu-item > a {font-size: 18px;}
-  .row.tech {justify-content: center;}
-</style>
-</head>
+{{ partial "head.html" . }}
 <body class="nk-body body-wider theme-dark mode-onepage">
     <div class="nk-wrap">
         <header class="nk-header page-header is-transparent is-sticky is-shrink is-dark" id="header">
-            
+            <!-- Header @s -->
             <div class="header-main">
                 <div class="header-container container">
                     <div class="header-wrap">
-                        
+                        <!-- Logo @s -->
                         <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".65">
                             <a href="./" class="logo-link">
                                 <img class="logo-dark" src="/images/logobcl3.png" srcset="/images/logobcl3.png 2x" alt="logo">
                                 <img class="logo-light" src="/images/logobcl2.png" srcset="/images/logobcl2.png 2x" alt="logo">
                             </a>
                         </div>
-                        
+                        <!-- Menu Toogle -->
                         <div class="header-nav-toggle">
                             <a href="#" class="navbar-toggle" data-menu-toggle="example-menu-04">
                                 <div class="toggle-line">
@@ -47,7 +21,7 @@
                                 </div>
                             </a>
                         </div>
-                        
+                        <!-- Menu @s -->
                         <div class="header-navbar header-navbar-s1">
                             <nav class="header-menu" id="example-menu-04">
                                 <ul class="menu menu-s2 animated" data-animate="fadeInDown" data-delay=".75">
@@ -57,25 +31,30 @@
                                         <a class="menu-link nav-link" href="#services">SERVIZI</a>
                                        
                                     </li>                                   
-                                    
+                                    <!-- <li class="menu-item"><a class="menu-link nav-link" href="#industries">SETTORI</a></li> -->
                                     <li class="menu-item"><a class="menu-link nav-link" href="#tech">TECNOLOGIA</a></li>
                                    
                                     <li class="menu-item"><a class="menu-link nav-link" href="#contact">CONTATTI</a></li>
                                     <li class="language-switcher language-switcher-s4 toggle-wrap">
-                                        <a class="toggle-tigger" href="#">IT</a>
+                                        <a class="toggle-tigger" href="#">{{.Language.LanguageName }}</a>
                                         <ul class="toggle-class toggle-drop toggle-drop-left drop-list drop-list-sm">
-                                            <li><a href="#">IT</a></li>
-                                            <li><a href="#">EN</a></li>
+                                            {{ range $.Site.Home.AllTranslations }}
+                                            <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                                            {{ end }}
+
                                         </ul>
                                     </li>
                                 </ul>
-                                
+                                <!--<ul class="menu-btns animated" data-animate="fadeInDown" data-delay=".85">
+                                    <li><a href="#" class="btn btn-rg btn-auto btn-outline btn-grad on-bg-theme btn-round"><span>CHI SIAMO</span></a></li>
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#login-popup" class="btn btn-rg btn-auto btn-outline btn-grad on-bg-theme btn-round"><span>Try App</span></a></li>
+                                </ul>-->
                             </nav>
-                        </div>
+                        </div><!-- .header-navbar @e -->
                     </div>
                 </div>
-            </div>
-            
+            </div><!-- .header-main @e -->
+            <!-- Banner @s -->
             <div class="header-banner bg-theme-dark">
                 <div class="nk-banner">
                     <div class="banner banner-mask-fix banner-fs banner-single tc-light">
@@ -92,7 +71,7 @@
                                     <div class="col-lg-6">
                                         <div class="banner-caption wide-auto text-center text-lg-start">
                                             <div class="cpn-head mt-0">
-                                                <h1 class="title title-xl-2 title-semibold animated" data-animate="fadeInUp" data-delay="1.35">Soluzioni per un futuro decentralizzato, equo e trasparente.  </h1>
+                                                <h1 class="title title-xl-2 title-semibold animated" data-animate="fadeInUp" data-delay="1.35">Soluzioni per un futuro decentralizzato, equo e trasparente. <!--e non censurabile.--> </h1>
                                             </div>
                                             <div class="cpn-text cpn-text-s1">
                                                 <p class="lead animated" data-animate="fadeInUp" data-delay="1.45">
@@ -105,22 +84,22 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><!-- .nk-banner -->
                 <div class="nk-ovm mask-c-dark shape-v mask-contain-bottom"></div>
-                
+                <!-- Place Particle Js -->
                 <div id="particles-bg" class="particles-container particles-bg" data-pt-base="#00c0fa" data-pt-base-op=".3" data-pt-line="#2b56f5" data-pt-line-op=".5" data-pt-shape="#00c0fa" data-pt-shape-op=".2"></div>
             </div>
-            
+            <!-- .header-banner @e -->
         </header>
         <main class="nk-pages">
             <section class="section mask-c-blend-dark bg-theme-dark-alt tc-light ov-h pb-0" id="bio">
                 <div class="container">
-                    
+                    <!-- Block @s -->
                     <div class="nk-block nk-block-text-wrap">
                         <div class="row align-items-center justify-content-center justify-content-md-between gutter-vr-30px">
                             <div class="col-mb-9 col-sm-7 col-md-6 col-lg-5 order-md-last">
@@ -138,45 +117,45 @@
                                     
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- .row -->
+                    </div><!-- .block @e -->
                 </div>
             </section>
-            
+            <!-- // -->
             <section class="section bg-theme-dark-alt tc-light ov-h" id="services" style="padding-bottom: 80px;">
                 <div class="container">
-                    
+                    <!-- Block @s -->
                     <div class="nk-block nk-block-features-2">
                         <div class="row align-items-center gutter-vr-30px justify-content-center justify-content-md-between">
                             <div class="col-mb-9 col-sm-7 col-md-6 col-lg-5">
                                 <div class="gfx py-4 animated" data-animate="fadeInUp" data-delay=".1">
                                     <img src="/images/gfx-a.png" alt="gfx">
                                 </div>
-                            </div>
+                            </div><!-- .col -->
                             <div class="col-sm-10 col-md-6 text-center text-md-start">
-                                
+                                <!-- Section Head @s -->
                                 <div class="nk-block-text">
                                     <h6 class="title title-xs title-s1 tc-primary animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">SERVIZI</h6>
                                     <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
                                         Blockchain, smart contract, token, NFT, criptovalute.</h2>
                                     <p class="lead animated" data-animate="fadeInUp" data-delay=".3">
-                                        
+                                        <!-- Vogliamo sviluppare servizi e prodotti per consentire a tutti di accedere in un modo sicuro, partecipare e fare transazioni in un ecosistema crescita ..  -->
                                         Il <i>Web3</i> è una visione del futuro del web che si basa su queste tecnologie decentralizzate.<br>Stiamo sviluppando progetti e applicazioni orientate a cambiare il modo in cui le persone interagiscono con la tecnologia, fanno transazioni, accedono a servizi, conservano e scambiano beni digitali.
                                     </p>
                                    
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div><!-- .row -->
+                    </div><!-- .block @e -->
                 </div>
             </section>
-            
+            <!-- // -->
             <section class="section bg-theme tc-light section-connect" style="padding-top: 0px;"></section>
             <section class="section bg-theme tc-light" style="padding-top: 0px;">
                 <div class="container">
-                   
+                   <!-- Section Head @s -->
                    <div class="section-head text-center wide-auto-sm tc-light">
-                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="SERVICES">SERVIZI</h2>
+                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="SERVIZI">SERVIZI</h2>
                     </div>
                     <div class="nk-block nk-block-features">
                         <div class="row justify-content-center gutter-vr-30px">
@@ -259,16 +238,16 @@
             <section class="section bg-theme-alt tc-light" id="tech" >
                 <div class="transform-line"></div>
                 <div class="container">
-                    
+                    <!-- Section Head @s -->
                     <div class="section-head text-center wide-auto-sm tc-light">
                         <div class="section-head-line">
                             <span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span>
                             <span class="line-5"></span><span class="line-6"></span><span class="line-7"></span><span class="line-8"></span>
                         </div>
-                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="TECHNOLOGY">TECNOLOGIA</h2>
+                        <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="TECNOLOGIA">TECNOLOGIA</h2>
                     </div>
                    
-                    
+                    <!-- Block @s -->
                     <div class="nk-block block-partners" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
                         <div class="nk-block">
                             <div class="row tech justify-content-center gutter-vr-0px">
@@ -372,76 +351,19 @@
                         </div>
                         
                     </div>
-                    
+                    <!-- Block @e -->
                 </div>
             </section>
 
         </main>
-        
-        <footer class="nk-footer bg-theme-alt section-connect" id="contact">
-    <div class="section section-m pb-0 tc-light ov-h">
-        <div class="container py-4">
-            
-            <div class="nk-block pb-lg-5">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-6 col-md-9">
-                        <div class="wide-auto-sm section-head section-head-sm pdb-r">
-                            <h2 class="title title-s4 animated" data-animate="fadeInUp" data-delay=".1" title="Contact">CONTATTI</h2>
-                            <p class="animated" data-animate="fadeInUp" data-delay=".2">Hai domande? Scrivi al team di BChainLab.</p>    
-                            <h4 class="title title-md animated" data-animate="fadeInUp" data-delay=".1"> Get in touch, Stay updated</h4>
-                        </div>
-                        
-                    <div class="nk-block block-contact">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-xl-8 col-lg-10">
-                                <ul class="contact-list contact-list-s1 flex-wrap flex-md-nowrap pdb-l">
-                                    
-                                    <li class="animated" data-animate="fadeInUp" data-delay=".4">
-                                        <em class="contact-icon fas fa-envelope"></em>
-                                        <div class="contact-text">
-                                            <span>blockchain@covenant.srl</span>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="col-xl-8 col-lg-10">
-                                <div class="contact-wrap p-0">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="nk-ovm shape-contain shape-center-top shape-p"></div>
-    </div>
-    <div class="section section-footer section-s tc-light bg-transparent">
-        <div class="container">
-            
-            <div class="nk-block block-footer">
-                <div class="row">
-                    <div class="col">
-                        <div class="wgs wgs-text text-center mb-3">
-                            
-                            <div class="copyright-text copyright-text-s3 pdt-m">
-                                <p><span class="d-sm-block">Copyright &copy; 2023 Covenant Srls. Tutti i diritti riservati.</span>P.IVA 14635081004. Via Flavia, 47 - 00187 Roma. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+        <!--Footer -->
+        {{ partial "footer.it.html" . }}
 
         
     </div>
-    
+    <!-- Preloader -->
     <div class="preloader"><span class="spinner spinner-round"></span></div>
-    
+    <!-- JavaScript -->
     <script src="/js/jquery.bundle.js?ver=200"></script>
     <script src="/js/scripts.js?ver=200"></script>
     <script src="/js/charts.js?ver=200"></script>

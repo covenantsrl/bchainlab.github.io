@@ -1,14 +1,27 @@
 #baseURL = 'https://www.bchainlab.it/'
 baseURL = 'https://www.bchainlab.it'
 
-languageCode = 'en-us'
+defaultContentLanguage = 'it'
+defaultContentLanguageInSubdir = true
+
+[languages.en]
+languageName = "EN"
+weight = 2
+contentDir = "content/en"
+
+
+[languages.it]
+languageName = "IT"
+weight = 1
+contentDir = "content/it"
+
+description = "A new web3 company focused on blockchain technologies, NFT and privacy."
+
 title = 'BChainLab'
 
-theme = "covenant-theme"
 publishDir = "docs"
 staticDir = ['assets']
 
-defaultContentLang = 'it'
 
 [params]
   copyright = "Copyright © 2023 Covenant Srls. P.IVA 14635081004. Via Flavia, 47 - 00187 Roma. Tutti i diritti riservati."
