@@ -87,7 +87,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="blog">
                                     <div class="blog-photo">
-                                        <img src="images/blog/a.jpg" alt="blog-thumb">
+                                        <a href="{{ .Permalink }}"><img src="images/blog/a.jpg" alt="blog-thumb"></a>
                                     </div>
                                     <div class="blog-text">
                                         <ul class="blog-meta">
@@ -135,7 +135,7 @@
             </section><!-- .section -->
         </main><!-- .nk-pages -->
            <!-- Footer -->
-           {{ partial "footer.it.html" . }}
+           {{ partial "footer.html" . }}
 
         </div>
         <!-- Preloader -->

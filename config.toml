@@ -8,7 +8,7 @@ title = 'BChainLab'
 publishDir = "docs"
 staticDir = ['assets']
 
-paginate = 1
+paginate = 3
 
 defaultContentLanguage = 'it'
 defaultContentLanguageInSubdir = true
