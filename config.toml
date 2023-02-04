@@ -1,5 +1,14 @@
-#baseURL = 'https://www.bchainlab.it/'
-baseURL = 'https://www.bchainlab.it'
+baseURL = 'https://www.bchainlab.it/'
+#baseURL = 'localhost:1313/'
+
+description = "A new web3 company focused on blockchain technologies, NFT and privacy."
+
+title = 'BChainLab'
+
+publishDir = "docs"
+staticDir = ['assets']
+
+paginate = 1
 
 defaultContentLanguage = 'it'
 defaultContentLanguageInSubdir = true
@@ -9,21 +18,20 @@ languageName = "EN"
 weight = 2
 contentDir = "content/en"
 
-
 [languages.it]
 languageName = "IT"
 weight = 1
 contentDir = "content/it"
 
-description = "A new web3 company focused on blockchain technologies, NFT and privacy."
-
-title = 'BChainLab'
-
-publishDir = "docs"
-staticDir = ['assets']
-
+# Categories and tags disabled for an easier start
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   copyright = "Copyright © 2023 Covenant Srls. P.IVA 14635081004. Via Flavia, 47 - 00187 Roma. Tutti i diritti riservati."
   description = "The New Web3 Software and Privacy Company"
+  summary_length = 50
+
+
+
 

@@ -1,0 +1,148 @@
+{{ partial "head.html" . }}
+<body class="nk-body body-wider theme-dark mode-onepage">
+    <div class="nk-wrap">
+        <header class="nk-header page-header is-transparent is-sticky is-shrink is-dark" id="header">
+            <!-- Header @s -->
+            <div class="header-main">
+                <div class="header-container container">
+                    <div class="header-wrap">
+                            <!-- Logo @s -->
+                            <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".65">
+                                <a href="./" class="logo-link">
+                                    <img class="logo-dark" src="/images/logobcl3.png" srcset="/images/logobcl3.png 2x" alt="logo">
+                                    <img class="logo-light" src="/images/logobcl2.png" srcset="/images/logobcl2.png 2x" alt="logo">
+                                </a>
+                            </div>
+                            <!-- Menu Toogle -->
+                            <div class="header-nav-toggle">
+                                <a href="#" class="navbar-toggle" data-menu-toggle="example-menu-04">
+                                    <div class="toggle-line">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Menu @s -->
+                            <div class="header-navbar header-navbar-s1">
+                                <nav class="header-menu" id="example-menu-04">
+                                    <ul class="menu menu-s2 animated" data-animate="fadeInDown" data-delay=".75">
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#bio">MISSION</a></li>
+                                        
+                                        <li class="menu-item">
+                                            <a class="menu-link nav-link" href="#services">SERVIZI</a>
+                                           
+                                        </li>                                   
+                                        <!-- <li class="menu-item"><a class="menu-link nav-link" href="#industries">SETTORI</a></li> -->
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#tech">TECNOLOGIA</a></li>
+                                       
+                                        <li class="menu-item"><a class="menu-link nav-link" href="#contact">CONTATTI</a></li>
+                                        <li class="language-switcher language-switcher-s4 toggle-wrap">
+                                            <a class="toggle-tigger" href="#">{{.Language.LanguageName }}</a>
+                                            <ul class="toggle-class toggle-drop toggle-drop-left drop-list drop-list-sm">
+                                                {{ range $.Site.Home.AllTranslations }}
+                                                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                                                {{ end }}
+    
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!--<ul class="menu-btns animated" data-animate="fadeInDown" data-delay=".85">
+                                        <li><a href="#" class="btn btn-rg btn-auto btn-outline btn-grad on-bg-theme btn-round"><span>CHI SIAMO</span></a></li>
+                                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#login-popup" class="btn btn-rg btn-auto btn-outline btn-grad on-bg-theme btn-round"><span>Try App</span></a></li>
+                                    </ul>-->
+                                </nav>
+                            </div><!-- .header-navbar @e -->
+                            </div>
+                        </div>
+                    </div><!-- .header-main @e -->
+                    <!-- Banner @s -->
+            <div class="header-banner bg-theme-grad">
+                <div class="nk-banner">
+                    <div class="banner banner-page">
+                        <div class="banner-wrap">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-6 col-lg-9">
+                                        <div class="banner-caption cpn tc-light text-center">
+                                            <div class="cpn-head">
+                                                <h2 class="title ttu">Blog</h2>
+                                                <p>Articoli su blockchain, web3, nft e tanto altro.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .nk-banner -->
+                <div class="nk-ovm shape-a-sm"></div>
+            </div>
+            <!-- .header-banner @e -->
+        </header>
+        <main class="nk-pages">
+            <section class="section bg-white" style="padding-top:100px !important;">
+                <div class="container">
+                    <div class="nk-block nk-block-blog">
+                        <div class="row">
+                            {{ range .Paginator.Pages }}
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="blog">
+                                    <div class="blog-photo">
+                                        <img src="images/blog/a.jpg" alt="blog-thumb">
+                                    </div>
+                                    <div class="blog-text">
+                                        <ul class="blog-meta">
+                                            <li>{{ .PublishDate.Format "January 2, 2006" }}</li>
+                                            <li><a href="#">Blockchain</a></li>
+                                        </ul>
+                                        <h4 class="title title-sm"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                                        <p>{{ .Summary | truncate 110 | safeHTML }}</p>
+                                    </div>
+                                </div><!-- .blog -->
+                            </div><!-- .col -->
+                            {{ end }}
+
+                            <!-- <div class="col-lg-4 col-sm-6">
+                                <div class="blog">
+                                    <div class="blog-photo">
+                                        <img src="images/blog/b.jpg" alt="blog-thumb">
+                                    </div>
+                                    <div class="blog-text">
+                                        <ul class="blog-meta">
+                                            <li><a href="#">12 Mar, 2022</a></li>
+                                            <li><a href="#">Blockchain</a></li>
+                                        </ul>
+                                        <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                                        <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                            
+                           
+                           
+                        </div><!-- .row -->
+                        <!-- <nav class="w-100 d-flex">
+                            <ul class="pagination">
+                                <li><a class="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#"><em class="icon ti ti-angle-right"></em></a></li>
+                            </ul> </nav>-->
+                            {{ partial "pagination.html" . }}
+
+                    </div><!-- .nk-block -->
+                </div><!-- .container -->
+            </section><!-- .section -->
+        </main><!-- .nk-pages -->
+           <!-- Footer -->
+           {{ partial "footer.it.html" . }}
+
+        </div>
+        <!-- Preloader -->
+        <div class="preloader"><span class="spinner spinner-round"></span></div>
+        <!-- JavaScript -->
+        <script src="/js/jquery.bundle.js?ver=200"></script>
+        <script src="/js/scripts.js?ver=200"></script>
+        <script src="/js/charts.js?ver=200"></script>
+    </body>
+    </html>
