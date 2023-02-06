@@ -1,4 +1,4 @@
-baseURL = 'https://www.bchainlab.it/'
+baseURL = 'https://bchainlab.it/'
 #baseURL = 'localhost:1313/'
 
 description = "A new web3 company focused on blockchain technologies, NFT and privacy."
@@ -20,8 +20,8 @@ contentDir = "content/en"
 
 [languages.it]
 languageName = "IT"
-#weight = 1
-#contentDir = "content/it"
+weight = 1
+contentDir = "content/it"
 
 # Categories and tags disabled for an easier start
 # https://gohugo.io/getting-started/configuration/#toml-configuration
