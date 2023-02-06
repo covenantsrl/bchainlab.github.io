@@ -20,8 +20,8 @@ contentDir = "content/en"
 
 [languages.it]
 languageName = "IT"
-weight = 1
-contentDir = "content/it"
+#weight = 1
+#contentDir = "content/it"
 
 # Categories and tags disabled for an easier start
 # https://gohugo.io/getting-started/configuration/#toml-configuration
