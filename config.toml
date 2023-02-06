@@ -11,7 +11,7 @@ staticDir = ['assets']
 paginate = 3
 
 defaultContentLanguage = 'it'
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [languages.en]
 languageName = "EN"

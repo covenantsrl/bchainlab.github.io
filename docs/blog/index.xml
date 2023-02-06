@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on BChainLab</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on BChainLab</description>
+    <title>Blog on BChainLab</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on BChainLab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 04 Feb 2023 11:47:36 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Feb 2023 11:47:36 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Primo post</title>
       <link>http://localhost:1313/blog/post/</link>
@@ -46,33 +46,6 @@ Column 1 Column 2 Column 3 I like tables This is content </description>
       
       <guid>http://localhost:1313/blog/post-4/</guid>
       <description>Quarto post H1 level title </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/404/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/404/</guid>
-      <description>Pagina non trovata.</description>
-    </item>
-    
-    <item>
-      <title>About Us</title>
-      <link>http://localhost:1313/aboutus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/aboutus/</guid>
-      <description>Chi siamo</description>
-    </item>
-    
-    <item>
-      <title>Privacy</title>
-      <link>http://localhost:1313/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/privacy/</guid>
-      <description>INFORMAZIONI SUL TRATTAMENTO DEI DATI PERSONALI degli utenti che consultano il sito web della Covenant S.r.l.s. ai sensi dell’articolo 13 del Regolamento (UE) 2016/679 PERCHÈ QUESTE INFORMAZIONI Ai sensi del Regolamento (UE) 2016/679 (di seguito “Regolamento”), questa pagina descrive le modalità di trattamento dei dati personali degli utenti che consultano i siti della Covenant Srls per la protezione dei dati personali (di seguito “Titolare del trattamento”) accessibili per via telematica al seguente indirizzo: www.</description>
     </item>
     
   </channel>
