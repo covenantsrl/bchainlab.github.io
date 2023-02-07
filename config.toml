@@ -1,7 +1,7 @@
 baseURL = 'https://bchainlab.it/'
 #baseURL = 'localhost:1313/'
 
-description = "A new web3 company focused on blockchain technologies, NFT and privacy."
+description = "A new web3 company focused on blockchain technologies, web3, bitcoin, smart contracts, NFT, privacy and legal."
 
 title = 'BChainLab'
 
