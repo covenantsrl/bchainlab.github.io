@@ -2,35 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bchainlab.it/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-02-04T11:47:36+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bchainlab.it/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://bchainlab.it/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>https://bchainlab.it/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2023-02-04T11:47:36+01:00</lastmod>
   </url><url>
-    <loc>https://bchainlab.it/blog/post/</loc>
+    <loc>http://localhost:1313/blog/post/</loc>
     <lastmod>2023-02-04T11:47:36+01:00</lastmod>
   </url><url>
-    <loc>https://bchainlab.it/blog/post-2/</loc>
+    <loc>http://localhost:1313/blog/post-2/</loc>
     <lastmod>2023-02-04T11:47:36+01:00</lastmod>
   </url><url>
-    <loc>https://bchainlab.it/blog/post-3/</loc>
+    <loc>http://localhost:1313/blog/post-3/</loc>
     <lastmod>2023-02-04T11:47:36+01:00</lastmod>
   </url><url>
-    <loc>https://bchainlab.it/blog/post-4/</loc>
+    <loc>http://localhost:1313/blog/post-4/</loc>
     <lastmod>2022-02-04T11:47:36+01:00</lastmod>
   </url><url>
-    <loc>https://bchainlab.it/404/</loc>
+    <loc>http://localhost:1313/404/</loc>
     <priority>0</priority>
+  </url><url>
+    <loc>http://localhost:1313/aboutus/</loc>
+  </url><url>
+    <loc>http://localhost:1313/privacy/</loc>
   </url>
 </urlset>
